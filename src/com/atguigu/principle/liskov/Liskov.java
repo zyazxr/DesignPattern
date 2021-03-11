@@ -8,6 +8,7 @@ public class Liskov {
 		System.out.println("11-3=" + a.func1(11, 3));
 		System.out.println("1-8=" + a.func1(1, 8));
 
+
 		System.out.println("-----------------------");
 		B b = new B();
 		System.out.println("11-3=" + b.func1(11, 3));//这里本意是求出11-3
@@ -32,6 +33,7 @@ class A {
 // 增加了一个新功能：完成两个数相加,然后和9求和
 class B extends A {
 	//这里，重写了A类的方法, 可能是无意识
+	@Override
 	public int func1(int a, int b) {
 		return a + b;
 	}

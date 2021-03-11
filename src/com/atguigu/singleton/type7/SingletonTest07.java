@@ -22,7 +22,7 @@ class Singleton {
 	//构造器私有化
 	private Singleton() {}
 	
-	//写一个静态内部类,该类中有一个静态属性 Singleton
+	//写一个静态内部类,该类中有一个静态属性 Singleton jVM可以保证类加载是线程安全的
 	private static class SingletonInstance {
 		private static final Singleton INSTANCE = new Singleton(); 
 	}
