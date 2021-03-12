@@ -11,7 +11,11 @@ public class Client {
 				System.out.println("使用了m1的方法");
 			}
 		};
+//		AbsAdapter absAdapter2 = new AbsAdapter(()->System.out.println("aaa")) ;
+//		Thread a = new Thread(() -> System.out.println("aa"));
 		
 		absAdapter.m1();
+
+
 	}
 }
