@@ -11,6 +11,7 @@ public class SingletonTest08 {
 
 		instance.sayOk();
 		Singleton.INSTANCE.getInstance().sayOk();
+		System.out.println(Runtime.getRuntime());
 	}
 }
 

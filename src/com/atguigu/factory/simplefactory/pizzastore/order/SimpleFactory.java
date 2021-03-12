@@ -1,9 +1,6 @@
 package com.atguigu.factory.simplefactory.pizzastore.order;
 
-import com.atguigu.factory.simplefactory.pizzastore.pizza.CheesePizza;
-import com.atguigu.factory.simplefactory.pizzastore.pizza.GreekPizza;
-import com.atguigu.factory.simplefactory.pizzastore.pizza.PepperPizza;
-import com.atguigu.factory.simplefactory.pizzastore.pizza.Pizza;
+import com.atguigu.factory.simplefactory.pizzastore.pizza.*;
 
 //简单工厂类
 public class SimpleFactory {
@@ -23,6 +20,10 @@ public class SimpleFactory {
 		} else if (orderType.equals("pepper")) {
 			pizza = new PepperPizza();
 			pizza.setName("胡椒披萨");
+		}
+		else if (orderType.equals("china")) {
+			pizza = new ChinaPizza();
+			pizza.setName("中国披萨");
 		}
 		
 		return pizza;
