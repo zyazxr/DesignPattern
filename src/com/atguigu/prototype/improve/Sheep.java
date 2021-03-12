@@ -1,9 +1,10 @@
 package com.atguigu.prototype.improve;
 
 
+import java.io.Serializable;
 
-
-public class Sheep implements Cloneable {
+//不继承Serializable 不能被 序列化
+public class Sheep implements Cloneable, Serializable {
 	private String name;
 	private int age;
 	private String color;

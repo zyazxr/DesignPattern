@@ -4,7 +4,10 @@ package com.atguigu.builder.improve;
 public class HouseDirector {
 	
 	HouseBuilder houseBuilder = null;
+	//构造器传入 houseBuilder
+	public HouseDirector() {
 
+	}
 	//构造器传入 houseBuilder
 	public HouseDirector(HouseBuilder houseBuilder) {
 		this.houseBuilder = houseBuilder;

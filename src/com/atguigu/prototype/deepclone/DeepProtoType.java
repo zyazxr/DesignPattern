@@ -15,7 +15,7 @@ public class DeepProtoType implements Serializable, Cloneable{
 	}
 	
 	
-	//深拷贝 - 方式 1 使用clone 方法
+	//深拷贝 - 方式 1 使用clone 方法 若底层还有非基本类，不会被深copy
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		
@@ -30,7 +30,7 @@ public class DeepProtoType implements Serializable, Cloneable{
 		return deepProtoType;
 	}
 	
-	//深拷贝 - 方式2 通过对象的序列化实现 (推荐)
+	//深拷贝 - 方式2 通过对象的序列化实现 (推荐) 若底层还有非基本类,也会被深copy
 	
 	public Object deepClone() {
 		
