@@ -17,7 +17,7 @@ public abstract class OrganizationComponent {
 
 	//¹¹ÔìÆ÷
 	public OrganizationComponent(String name, String des) {
-		super();
+//		super();
 		this.name = name;
 		this.des = des;
 	}

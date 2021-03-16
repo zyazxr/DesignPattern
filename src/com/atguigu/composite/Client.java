@@ -11,7 +11,7 @@ public class Client {
 		//创建 学院
 		OrganizationComponent computerCollege = new College("计算机学院", " 计算机学院 ");
 		OrganizationComponent infoEngineercollege = new College("信息工程学院", " 信息工程学院 ");
-		
+		Department department = new Department("独立学科","不学不行");
 		
 		//创建各个学院下面的系(专业)
 		computerCollege.add(new Department("软件工程", " 软件工程不错 "));
@@ -25,8 +25,9 @@ public class Client {
 		//将学院加入到 学校
 		university.add(computerCollege);
 		university.add(infoEngineercollege);
-		
-		//university.print();
+		university.add(department);
+
+		university.print();
 		infoEngineercollege.print();
 	}
 

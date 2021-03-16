@@ -27,7 +27,7 @@ public class Department extends OrganizationComponent {
 	@Override
 	protected void print() {
 		// TODO Auto-generated method stub
-		System.out.println(getName());
+		System.out.println(getName() + "    "+ getDes());
 	}
 
 }
