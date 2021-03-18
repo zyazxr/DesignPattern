@@ -12,6 +12,8 @@ public class Client {
 		//执行代理对象的方法，触发intecept 方法，从而实现 对目标对象的调用
 		String res = proxyInstance.teach();
 		System.out.println("res=" + res);
+		String res2 = proxyInstance.sayHello("tome");
+		System.out.println("res2=" + res2);
 	}
 
 }
