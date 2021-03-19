@@ -14,7 +14,7 @@ public class Client {
 		InfoCollege infoCollege = new InfoCollege();
 		
 		collegeList.add(computerCollege);
-		//collegeList.add(infoCollege);
+		collegeList.add(infoCollege);
 		
 		OutPutImpl outPutImpl = new OutPutImpl(collegeList);
 		outPutImpl.printCollege();

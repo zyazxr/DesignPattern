@@ -33,6 +33,7 @@ public class InfoColleageIterator implements Iterator {
 	}
 	
 	//ø’ µœ÷remove
+	@Override
 	public void remove() {
 		
 	}

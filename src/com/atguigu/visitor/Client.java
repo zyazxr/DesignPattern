@@ -6,14 +6,16 @@ public class Client {
 		// TODO Auto-generated method stub
 		//创建ObjectStructure
 		ObjectStructure objectStructure = new ObjectStructure();
-		
-		objectStructure.attach(new Man());
+//		new Man().accept(new Fail());
+		Man test = new Man();
+		test.accept(new Fail());
+		objectStructure.attach(test);
 		objectStructure.attach(new Woman());
 		
 		
 		//成功
-		Success success = new Success();
-		objectStructure.display(success);
+//		Success success = new Success();
+		objectStructure.display();
 		
 		System.out.println("===============");
 		Fail fail = new Fail();

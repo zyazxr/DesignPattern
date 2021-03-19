@@ -24,4 +24,10 @@ public class ObjectStructure {
 			p.accept(action);
 		}
 	}
+	//ÏÔÊ¾²âÆÀÇé¿ö
+	public void display() {
+		for(Person p: persons) {
+			p.toString();
+		}
+	}
 }

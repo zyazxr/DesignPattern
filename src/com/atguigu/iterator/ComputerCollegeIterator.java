@@ -37,6 +37,7 @@ public class ComputerCollegeIterator implements Iterator {
 	}
 	
 	//删除的方法，默认空实现
+	@Override
 	public void remove() {
 		
 	}
